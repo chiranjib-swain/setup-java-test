@@ -1,0 +1,25 @@
+name: Java Setup Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Java version
+      run: |
+        # Source tools.sh to set the JAVA_VERSION environment variable
+        source .github/workflows/tools.sh
+
+        # Export JAVA_VERSION to $GITHUB_ENV to persist it across subsequent steps
+        echo "JAVA_VERSION=$JAVA_VERSION" >> $GITHUB_ENV
+
+    - name: Set up Java using the exported JAVA_VERSION
+      uses: actions/setup-java@v4
+      with:
+        distribution: corretto
+        java-version: ${{ env.JAVA_VERSION }}
