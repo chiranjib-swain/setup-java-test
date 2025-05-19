@@ -18,6 +18,9 @@ jobs:
             17
             11
 
+      - name: Set JAVA_HOME to JDK 17 for Maven
+        run: echo "JAVA_HOME=${JAVA_HOME_17_X64}" >> $GITHUB_ENV
+
       - name: Verify Java version for Maven command
         run: java -version
 
