@@ -17,22 +17,14 @@ jobs:
           java-version: |
             17
             11
-      - name: Set JAVA_HOME and update PATH to JDK 17 for Maven
-        run: |
-          echo "JAVA_HOME=${JAVA_HOME_17_X64}" >> $GITHUB_ENV
-          echo "${JAVA_HOME_17_X64}/bin" >> $GITHUB_PATH
-      
-      # # Set JAVA_HOME  use JDK 17
-      # - name: Set JAVA_HOME to JDK 17
-      #   run: |
-      #     echo "JAVA_HOME=${JAVA_HOME_17_X64}" >> $GITHUB_ENV
-
-       # Print the PATH environment variable
-      - name: Print PATH
-        run: echo $PATH
 
       - name: Verify Java version for Maven command
         run: java -version
 
-      - name: Build with Maven
-        run: mvn --batch-mode verify
+      - name: Build with Maven with JDK 17
+        env:
+          JAVA_HOME: ${{ env.JAVA_HOME_17_X64 }}
+          PATH: ${{ env.JAVA_HOME_17_X64 }}/bin:${{ env.PATH }}
+        run: |
+          echo $PATH
+          mvn --batch-mode verify
