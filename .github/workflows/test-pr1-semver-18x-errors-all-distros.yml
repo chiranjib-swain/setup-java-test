@@ -1,0 +1,164 @@
+name: "PR1: SemVer 18.x not-found error (all distros)"
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  adopt:
+    name: "adopt: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: adopt
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
+
+  base:
+    name: "base: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: base
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
+
+  corretto:
+    name: "corretto: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: corretto
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
+
+  dragonwell:
+    name: "dragonwell: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: dragonwell
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
+
+  graalvm:
+    name: "graalvm: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: graalvm
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
+
+  jetbrains:
+    name: "jetbrains: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: jetbrains
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
+
+  liberica:
+    name: "liberica: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: liberica
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
+
+  microsoft:
+    name: "microsoft: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: microsoft
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
+
+  oracle:
+    name: "oracle: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: oracle
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
+
+  sapmachine:
+    name: "sapmachine: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: sapmachine
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
+
+  semeru:
+    name: "semeru: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: semeru
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
+
+  temurin:
+    name: "temurin: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: temurin
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
+
+  zulu:
+    name: "zulu: 18.x not found"
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+        with:
+          distribution: zulu
+          java-version: "18.x"
+          java-package: jdk
+          architecture: x64
