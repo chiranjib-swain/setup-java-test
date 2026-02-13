@@ -8,14 +8,14 @@ permissions:
 
 jobs:
   adopt:
-    name: "adopt: 18.x not found"
+    name: "adopt: 999.x not found"
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
       - uses: mahabaleshwars/setup-java@fix/descriptive-version-error-978
         with:
           distribution: adopt
-          java-version: "18.x"
+          java-version: "999.x"
           java-package: jdk
           architecture: x64
 
@@ -80,14 +80,14 @@ jobs:
           architecture: x64
 
   liberica:
-    name: "liberica: 18.x not found"
+    name: "liberica: 999.x not found"
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
       - uses: mahabaleshwars/setup-java@fix/descriptive-version-error-978
         with:
           distribution: liberica
-          java-version: "18.x"
+          java-version: "999.x"
           java-package: jdk
           architecture: x64
 
@@ -116,49 +116,49 @@ jobs:
           architecture: x64
 
   sapmachine:
-    name: "sapmachine: 18.x not found"
+    name: "sapmachine: 999.x not found"
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
       - uses: mahabaleshwars/setup-java@fix/descriptive-version-error-978
         with:
           distribution: sapmachine
-          java-version: "18.x"
+          java-version: "999.x"
           java-package: jdk
           architecture: x64
 
   semeru:
-    name: "semeru: 18.x not found"
+    name: "semeru: 999.x not found"
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
       - uses: mahabaleshwars/setup-java@fix/descriptive-version-error-978
         with:
           distribution: semeru
-          java-version: "18.x"
+          java-version: "999.x"
           java-package: jdk
           architecture: x64
 
   temurin:
-    name: "temurin: 18.x not found"
+    name: "temurin: 999.x not found"
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
       - uses: mahabaleshwars/setup-java@fix/descriptive-version-error-978
         with:
           distribution: temurin
-          java-version: "18.x"
+          java-version: "999.x"
           java-package: jdk
           architecture: x64
 
   zulu:
-    name: "zulu: 18.x not found"
+    name: "zulu: 999.x not found"
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
       - uses: mahabaleshwars/setup-java@fix/descriptive-version-error-978
         with:
           distribution: zulu
-          java-version: "18.x"
+          java-version: "999.x"
           java-package: jdk
           architecture: x64
