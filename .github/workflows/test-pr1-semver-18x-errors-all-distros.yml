@@ -60,7 +60,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: chiranjib-swain/setup-java@improve-java-error-messaging
+      - uses: actions/setup-java@v5
         with:
           distribution: graalvm
           java-version: "18.x"
