@@ -83,7 +83,7 @@ jobs:
       # Workaround 3: sudo env PATH=... JAVA_HOME=... java
       # Explicit env passthrough — most portable
       # ----------------------------------------------------------
-      - name: "Workaround 3️⃣ : sudo env PATH=\$PATH JAVA_HOME=\$JAVA_HOME java"
+      - name: "Workaround 3️⃣ - sudo env PATH=\ $PATH JAVA_HOME=\ $JAVA_HOME java"
         run: |
           echo "=== sudo env PATH=\$PATH JAVA_HOME=\$JAVA_HOME java -version ==="
           sudo env PATH=$PATH JAVA_HOME=$JAVA_HOME java -version
