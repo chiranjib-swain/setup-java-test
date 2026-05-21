@@ -23,7 +23,7 @@ jobs:
           echo "JAVA_HOME=$JAVA_HOME"
           java -version
 
-      - name:  sudo java version (BUG: falls back to system default JDK 17)
+      - name:  sudo java version (BUG- falls back to system default JDK 17)
         run: |
           echo "--- Running: sudo java -version ---"
           sudo java -version
@@ -31,7 +31,7 @@ jobs:
           echo "--- System java via sudo (shows the fallback path) ---"
           sudo which java
 
-      - name: Show why: sudo resets PATH and JAVA_HOME
+      - name: Show why- sudo resets PATH and JAVA_HOME
         run: |
           echo "User-level JAVA_HOME : $JAVA_HOME"
           echo "sudo JAVA_HOME       : $(sudo printenv JAVA_HOME || echo '<not set>')"
