@@ -23,7 +23,7 @@ jobs:
           echo "JAVA_HOME=$JAVA_HOME"
           java -version
 
-      - name: ❌ sudo java version (BUG: falls back to system default JDK 17)
+      - name:  sudo java version (BUG: falls back to system default JDK 17)
         run: |
           echo "--- Running: sudo java -version ---"
           sudo java -version
